@@ -34,10 +34,8 @@ public class visualizadorscript : MonoBehaviour
     {
         factorizquierdo = Random.Range(0, producto1.Length);
         factorderecho = Random.Range(0, producto2.Length);
-        GameObject objetoAMover1 = producto1[factorizquierdo];
-        Vector3 nuevaPosicion1 = new Vector3(50, 0, 0);
-        GameObject objetoAMover2 = producto2[factorderecho];
-        Vector3 nuevaPosicion2 = new Vector3(-50, 0, 0);
+        producto1[factorizquierdo].transform.position = new Vector3(5f, 0f, 0f);
+        producto2[factorderecho].transform.position = new Vector3(-5f, 0f, 0f);
         producto1[factorizquierdo].SetActive(true);
         producto2[factorderecho].SetActive(true);
     }
