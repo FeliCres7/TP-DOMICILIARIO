@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95f5d3d112163c64588755cc881c57bf
+guid: 692e377214094b8419ef6ee7bf53c1a7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,7 @@ ModelImporter:
     2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: QUESO
-    2186277476908879412: ImportLogs
+    4300000: Cube.001
   externalObjects: {}
   materials:
     importMaterials: 1
