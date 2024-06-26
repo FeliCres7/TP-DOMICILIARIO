@@ -90,4 +90,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9991b53f8159748b5217c6431d550e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 50
