@@ -8,7 +8,7 @@ public class visualizadorscript : MonoBehaviour
     public GameObject[] producto2;
     int factorderecho;
     int factorizquierdo;
-    // Start is called before the first frame update
+
     void Start()
     {
         DeactivateAll();
@@ -34,8 +34,8 @@ public class visualizadorscript : MonoBehaviour
     {
         factorizquierdo = Random.Range(0, producto1.Length);
         factorderecho = Random.Range(0, producto2.Length);
-        producto1[factorizquierdo].transform.position = new Vector3(5f, 0f, 0f);
-        producto2[factorderecho].transform.position = new Vector3(-5f, 0f, 0f);
+        producto1[factorizquierdo].transform.position = new Vector3(6f, 0f, 0f);
+        producto2[factorderecho].transform.position = new Vector3(-6f, 0f, 0f);
         producto1[factorizquierdo].SetActive(true);
         producto2[factorderecho].SetActive(true);
     }
