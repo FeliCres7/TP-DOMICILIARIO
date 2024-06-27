@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class visualizadorscript : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class visualizadorscript : MonoBehaviour
     public GameObject[] producto2;
     int factorderecho;
     int factorizquierdo;
+    public Text PrecioIzq;
+    public Text PrecioDer;
+    public InputField respuesta;
+    public GameObject respcorrecta;
+    public GameObject respincorrecta;
+
 
     void Start()
     {
@@ -27,6 +34,9 @@ public class visualizadorscript : MonoBehaviour
         {
             producto1[i].SetActive(false);
             producto2[i].SetActive(false);
+            respcorrecta.SetActive(false);
+            respincorrecta.SetActive(false);
+
         }
     }
 
@@ -38,5 +48,13 @@ public class visualizadorscript : MonoBehaviour
         producto2[factorderecho].transform.position = new Vector3(-6f, 0f, 0f);
         producto1[factorizquierdo].SetActive(true);
         producto2[factorderecho].SetActive(true);
+        int precioIzq = producto1[factorizquierdo].GetComponent<productoscript>().precio;
+        int precioDer = producto2[factorderecho].GetComponent<productoscript>().precio;
+        PrecioIzq.text = "$" + precioIzq.ToString();
+        PrecioDer.text = "$" + precioDer.ToString();
+    }
+    public void BotonPresionado()
+    {
+        respincorrecta.SetActive(true);
     }
 }
