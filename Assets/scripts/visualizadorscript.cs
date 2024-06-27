@@ -14,7 +14,7 @@ public class visualizadorscript : MonoBehaviour
     public InputField respuesta;
     public GameObject respcorrecta;
     public GameObject respincorrecta;
-
+    public GameObject inputvacío;
 
     void Start()
     {
@@ -36,6 +36,7 @@ public class visualizadorscript : MonoBehaviour
             producto2[i].SetActive(false);
             respcorrecta.SetActive(false);
             respincorrecta.SetActive(false);
+            inputvacío.SetActive(false);
 
         }
     }
@@ -55,6 +56,9 @@ public class visualizadorscript : MonoBehaviour
     }
     public void BotonPresionado()
     {
-        respincorrecta.SetActive(true);
+        if (respuesta=null)
+        {
+            inputvacío.SetActive(true);
+        }
     }
 }
