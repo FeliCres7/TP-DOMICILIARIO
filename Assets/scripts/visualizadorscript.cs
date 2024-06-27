@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class visualizadorscript : MonoBehaviour
 {
@@ -56,9 +57,60 @@ public class visualizadorscript : MonoBehaviour
     }
     public void BotonPresionado()
     {
-        if (respuesta=null)
+        if (respuesta.text == "")
         {
             inputvacío.SetActive(true);
+            respcorrecta.SetActive(false);
+            respincorrecta.SetActive(false);
         }
+        else
+        {
+            inputvacío.SetActive(false);
+            int precioIzq = producto1[factorizquierdo].GetComponent<productoscript>().precio;
+            int precioDer = producto2[factorderecho].GetComponent<productoscript>().precio;
+            int preciototal = precioIzq + precioDer;
+            int respuestaUsuario;
+
+            if (int.TryParse(respuesta.text, out respuestaUsuario))
+            {
+                if (respuestaUsuario == preciototal)
+                {
+                    respcorrecta.SetActive(true);
+                    respincorrecta.SetActive(false);
+                }
+                else
+                {
+                    respcorrecta.SetActive(false);
+                    respincorrecta.SetActive(true);
+                }
+            }
+            else
+            {
+                inputvacío.SetActive(true);
+                respcorrecta.SetActive(false);
+                respincorrecta.SetActive(false);
+            }
+        }
+    }
+
+
+    public void Btncerrarpresionado()
+    {
+        inputvacío.SetActive(false);
+    }
+
+    public void Btnvolveraintentarpresionado()
+    {
+        respincorrecta.SetActive(false);
+    }
+
+    public void Btnsalirpresionado()
+    {
+        SceneManager.LoadScene("SeleccionarJuegos");
+    }
+
+    public void Btnreiniciarpresionado()
+    {
+        SceneManager.LoadScene("Juego");
     }
 }

@@ -491,7 +491,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 145337797}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 351080020}
+        m_MethodName: Btncerrarpresionado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &145337797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,7 +989,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421228038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 351080020}
+        m_MethodName: Btnsalirpresionado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &421228038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &591934070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2854,7 +2876,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1142141084}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 351080020}
+        m_MethodName: Btnvolveraintentarpresionado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1142141084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3221,7 +3254,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1322943766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 351080020}
+        m_MethodName: Btnsalirpresionado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1322943766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3418,7 +3462,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501560724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 351080020}
+        m_MethodName: Btnreiniciarpresionado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1501560724
 MonoBehaviour:
   m_ObjectHideFlags: 0
